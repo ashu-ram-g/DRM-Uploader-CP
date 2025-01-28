@@ -215,7 +215,21 @@ async def account_login(bot: Client, m: Message):
             elif '/master.mpd' in url:
              id =  url.split("/")[-2]
              url =  "https://d26g5bnklkwsh4.cloudfront.net/" + id + "/master.m3u8"
-            
+
+            elif 'testbook' in url:
+                 id =  url.split("/")[-2]
+                 url =  "https://extractapi.vercel.app/classplus?link=https://cpvod.testbook.com/" + id + "/playlist.m3u8"
+
+             elif 'cpvod.testbook' in url:
+                 id =  url.split("/")[-2]
+                 url =  "https://extractapi.vercel.app/classplus?link=https://cpvod.testbook.com/" + id + "/playlist.m3u8"   
+                           
+             elif '/master.mpd' in url:
+                 id =  url.split("/")[-2]
+                 url =  "https://pedablu.jarviss.workers.dev?v=https://d1d34p8vz63oiq.cloudfront.net/" + id + "/master.m3u8"
+             elif 'tencdn' in url:
+                 id =  url.split("/")[-2]
+                 url =  "https://extractapi.vercel.app/classplus?link=https://tencdn.classplusapp.com/" + id + "/master.m3u8"
             
             elif "apps-s3-jw-prod.utkarshapp.com" in url:
                 if 'enc_plain_mp4' in url:
